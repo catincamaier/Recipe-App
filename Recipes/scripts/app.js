@@ -78,8 +78,8 @@ class RecipeFinder {
         const encodedSearchTerm = encodeURIComponent(searchTerm);
 
         // Make a web request using fetch API
-        fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${encodedSearchTerm}&app_id=9ea7e2db&app_key=
-        86d5e5bbdfacea4d707f5561d0d1ac71`)
+        fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${encodedSearchTerm}&app_id=301a8cb9&app_key=
+        78b5d3d4fed19e9234358c65287890fe)
             .then(response => response.json())
             .then(data => {
                 // Process the response data
