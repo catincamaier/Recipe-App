@@ -79,7 +79,7 @@ class RecipeFinder {
 
         // Make a web request using fetch API
         fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${encodedSearchTerm}&app_id=301a8cb9&app_key=
-        78b5d3d4fed19e9234358c65287890fe)
+        78b5d3d4fed19e9234358c65287890fe`)
             .then(response => response.json())
             .then(data => {
                 // Process the response data
