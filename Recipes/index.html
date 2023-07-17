@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipes</title>
+    <meta chartset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/carrrousel.css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <img src="assets/images/avocado.png" alt="Logo" class="logo">
+    </div>
+    <!--NAVBAR-->
+
+    <br>
+
+    <!--PREDEFINID LIST-->
+    <div class="container-bar">
+        <div id="predefined-bar">
+            <div class="carousel-container-bar">
+                <div class="carousel-items">
+                    <button class="predefined-ingredient" onclick="populateSearchInput('tomatoes')">Tomatoes</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('chicken')">Chicken</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('broccoli')">Broccoli</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('eggs')">Eggs</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('potatoes')">Potatoes</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('rice')">Rice</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('lentil')">Lentil</button>
+                    <button class="predefined-ingredient" onclick="populateSearchInput('spinach')">Spinach</button>
+                    <!-- Add more predefined ingredients as needed -->
+                </div>
+            </div>
+
+            <div id="dropdown-bar" class="hidden">
+                <select id="ingredient-dropdown" onchange="populateSearchInput(this.value)">
+              <option value="default">Select an ingredient</option>
+              <option value="tomatoes">Tomatoes</option>
+              <option value="chicken">Chicken</option>
+              <option value="broccoli">Broccoli</option>
+              <option value="eggs">Eggs</option>
+              <option value="potatoes">Potatoes</option>
+              <option value="rice">Rice</option>
+              <option value="lentil">Lentil</option>
+              <option value="spinach">Spinach</option>
+              <!-- Add more predefined ingredients as needed -->
+            </select>
+            </div>
+        </div>
+    </div>
+    <!--PREDEFINID LIST-->
+    <br>
+
+    <!--FORM-->
+
+    <div class="container">
+        <h1 class="title">Recipe Finder <span class="material-symbols-outlined">spa</span></h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter an ingredient..." />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <!--FORM-->
+
+    <br />
+
+    <!--CAROUSEL-->
+
+    <div id="carouselbox">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="assets/images/food1.jpg" alt="Food 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/food2.jpg" alt="Food 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/food3.jpg" alt="Food 3" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/food4.jpg" alt="Food 4" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/food5.jpg" alt="Food 5" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CAROUSEL-->
+
+
+
+    <div id="recipe-list"></div>
+
+
+    <!--FOOTER-->
+    <br />
+    <br />
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/catinca.maier" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/catincamaier/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">© Recipe Finder 2023 . All rights reserved.</p>
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/carrousel.js"></script>
+
+</body>
+
+</html>
